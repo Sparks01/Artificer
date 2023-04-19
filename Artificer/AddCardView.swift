@@ -6,11 +6,9 @@
 //
 
 import SwiftUI
-struct AddCardView: View {
-    @StateObject var viewModel: CardViewModel
-    @State private var selectedTemplateName: String?
 
-    let templateNames = ["Template 1", "Template 2", "Template 3"]
+struct AddCardView: View {
+    @ObservedObject var viewModel: CardViewModel
 
     var body: some View {
         NavigationView {
@@ -21,23 +19,9 @@ struct AddCardView: View {
                 }
 
                 Section(header: Text("Template")) {
-                    ForEach(templateNames, id: \.self) { name in
-                        HStack {
-                            Text(name)
-                            Spacer()
-                            if selectedTemplateName == name {
-                                Image(systemName: "checkmark")
-                            }
-                        }
-                        .contentShape(Rectangle())
-                        .onTapGesture {
-                          selectedTemplateName = name
-                          viewModel.imageName = name.lowercased().replacingOccurrences(of: " ", with: "_") + ".jpg"
-                        }
-                    }
-                    
+                    TemplateListView(viewModel: viewModel)
                 }
-                
+
                 Section() {
                     Button("Save") {
                         viewModel.saveCard()
@@ -45,6 +29,26 @@ struct AddCardView: View {
                 }
             }
             .navigationTitle("Add Card")
+        }
+    }
+}
+
+struct TemplateListView: View {
+    @ObservedObject var viewModel: CardViewModel
+
+    var body: some View {
+        ForEach(viewModel.templates) { template in
+            HStack {
+                Text(template.title)
+                Spacer()
+                if viewModel.selectedTemplate?.id == template.id {
+                    Image(systemName: "checkmark")
+                }
+            }
+            .contentShape(Rectangle())
+            .onTapGesture {
+                viewModel.selectedTemplate = template
+            }
         }
     }
 }

@@ -21,6 +21,7 @@
 		F435F57129D547900087C095 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435F57029D547900087C095 /* CardView.swift */; };
 		F435F57329D547A20087C095 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435F57229D547A20087C095 /* CardListView.swift */; };
 		F435F57529D547B70087C095 /* AddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435F57429D547B70087C095 /* AddCardView.swift */; };
+		F48FCC3729EFA16A0016BC67 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FCC3629EFA16A0016BC67 /* Template.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		F435F57029D547900087C095 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F435F57229D547A20087C095 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
 		F435F57429D547B70087C095 /* AddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardView.swift; sourceTree = "<group>"; };
+		F48FCC3629EFA16A0016BC67 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				F435F53D29D547400087C095 /* ArtificerApp.swift */,
 				F435F53F29D547400087C095 /* ContentView.swift */,
 				F435F56C29D5476F0087C095 /* CardModel.swift */,
+				F48FCC3629EFA16A0016BC67 /* Template.swift */,
 				F435F56E29D547810087C095 /* CardViewModel.swift */,
 				F435F57029D547900087C095 /* CardView.swift */,
 				F435F57229D547A20087C095 /* CardListView.swift */,
@@ -283,6 +286,7 @@
 				F435F54029D547400087C095 /* ContentView.swift in Sources */,
 				F435F56F29D547810087C095 /* CardViewModel.swift in Sources */,
 				F435F53E29D547400087C095 /* ArtificerApp.swift in Sources */,
+				F48FCC3729EFA16A0016BC67 /* Template.swift in Sources */,
 				F435F54A29D547410087C095 /* Artificer.xcdatamodeld in Sources */,
 				F435F57329D547A20087C095 /* CardListView.swift in Sources */,
 				F435F56D29D5476F0087C095 /* CardModel.swift in Sources */,
