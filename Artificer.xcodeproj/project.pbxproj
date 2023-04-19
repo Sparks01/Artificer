@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F435F53E29D547400087C095 /* ArtificerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435F53D29D547400087C095 /* ArtificerApp.swift */; };
+		F435F54029D547400087C095 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435F53F29D547400087C095 /* ContentView.swift */; };
+		F435F54229D547410087C095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F435F54129D547410087C095 /* Assets.xcassets */; };
+		F435F54529D547410087C095 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F435F54429D547410087C095 /* Preview Assets.xcassets */; };
+		F435F54729D547410087C095 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435F54629D547410087C095 /* Persistence.swift */; };
+		F435F54A29D547410087C095 /* Artificer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F435F54829D547410087C095 /* Artificer.xcdatamodeld */; };
+		F435F55429D547410087C095 /* ArtificerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435F55329D547410087C095 /* ArtificerTests.swift */; };
+		F435F55E29D547410087C095 /* ArtificerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435F55D29D547410087C095 /* ArtificerUITests.swift */; };
+		F435F56029D547410087C095 /* ArtificerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435F55F29D547410087C095 /* ArtificerUITestsLaunchTests.swift */; };
+		F435F56D29D5476F0087C095 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435F56C29D5476F0087C095 /* CardModel.swift */; };
+		F435F56F29D547810087C095 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435F56E29D547810087C095 /* CardViewModel.swift */; };
+		F435F57129D547900087C095 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435F57029D547900087C095 /* CardView.swift */; };
+		F435F57329D547A20087C095 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435F57229D547A20087C095 /* CardListView.swift */; };
+		F435F57529D547B70087C095 /* AddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435F57429D547B70087C095 /* AddCardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F435F55029D547410087C095 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F435F53229D547400087C095 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F435F53929D547400087C095;
+			remoteInfo = Artificer;
+		};
+		F435F55A29D547410087C095 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F435F53229D547400087C095 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F435F53929D547400087C095;
+			remoteInfo = Artificer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F435F53A29D547400087C095 /* Artificer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artificer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F435F53D29D547400087C095 /* ArtificerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtificerApp.swift; sourceTree = "<group>"; };
+		F435F53F29D547400087C095 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F435F54129D547410087C095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F435F54429D547410087C095 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F435F54629D547410087C095 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F435F54929D547410087C095 /* Artificer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Artificer.xcdatamodel; sourceTree = "<group>"; };
+		F435F54F29D547410087C095 /* ArtificerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtificerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F435F55329D547410087C095 /* ArtificerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtificerTests.swift; sourceTree = "<group>"; };
+		F435F55929D547410087C095 /* ArtificerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtificerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F435F55D29D547410087C095 /* ArtificerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtificerUITests.swift; sourceTree = "<group>"; };
+		F435F55F29D547410087C095 /* ArtificerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtificerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F435F56C29D5476F0087C095 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		F435F56E29D547810087C095 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		F435F57029D547900087C095 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F435F57229D547A20087C095 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
+		F435F57429D547B70087C095 /* AddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F435F53729D547400087C095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F435F54C29D547410087C095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F435F55629D547410087C095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F435F53129D547400087C095 = {
+			isa = PBXGroup;
+			children = (
+				F435F53C29D547400087C095 /* Artificer */,
+				F435F55229D547410087C095 /* ArtificerTests */,
+				F435F55C29D547410087C095 /* ArtificerUITests */,
+				F435F53B29D547400087C095 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F435F53B29D547400087C095 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F435F53A29D547400087C095 /* Artificer.app */,
+				F435F54F29D547410087C095 /* ArtificerTests.xctest */,
+				F435F55929D547410087C095 /* ArtificerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F435F53C29D547400087C095 /* Artificer */ = {
+			isa = PBXGroup;
+			children = (
+				F435F53D29D547400087C095 /* ArtificerApp.swift */,
+				F435F53F29D547400087C095 /* ContentView.swift */,
+				F435F56C29D5476F0087C095 /* CardModel.swift */,
+				F435F56E29D547810087C095 /* CardViewModel.swift */,
+				F435F57029D547900087C095 /* CardView.swift */,
+				F435F57229D547A20087C095 /* CardListView.swift */,
+				F435F57429D547B70087C095 /* AddCardView.swift */,
+				F435F54129D547410087C095 /* Assets.xcassets */,
+				F435F54629D547410087C095 /* Persistence.swift */,
+				F435F54829D547410087C095 /* Artificer.xcdatamodeld */,
+				F435F54329D547410087C095 /* Preview Content */,
+			);
+			path = Artificer;
+			sourceTree = "<group>";
+		};
+		F435F54329D547410087C095 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F435F54429D547410087C095 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F435F55229D547410087C095 /* ArtificerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F435F55329D547410087C095 /* ArtificerTests.swift */,
+			);
+			path = ArtificerTests;
+			sourceTree = "<group>";
+		};
+		F435F55C29D547410087C095 /* ArtificerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F435F55D29D547410087C095 /* ArtificerUITests.swift */,
+				F435F55F29D547410087C095 /* ArtificerUITestsLaunchTests.swift */,
+			);
+			path = ArtificerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F435F53929D547400087C095 /* Artificer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F435F56329D547410087C095 /* Build configuration list for PBXNativeTarget "Artificer" */;
+			buildPhases = (
+				F435F53629D547400087C095 /* Sources */,
+				F435F53729D547400087C095 /* Frameworks */,
+				F435F53829D547400087C095 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Artificer;
+			productName = Artificer;
+			productReference = F435F53A29D547400087C095 /* Artificer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F435F54E29D547410087C095 /* ArtificerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F435F56629D547410087C095 /* Build configuration list for PBXNativeTarget "ArtificerTests" */;
+			buildPhases = (
+				F435F54B29D547410087C095 /* Sources */,
+				F435F54C29D547410087C095 /* Frameworks */,
+				F435F54D29D547410087C095 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F435F55129D547410087C095 /* PBXTargetDependency */,
+			);
+			name = ArtificerTests;
+			productName = ArtificerTests;
+			productReference = F435F54F29D547410087C095 /* ArtificerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F435F55829D547410087C095 /* ArtificerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F435F56929D547410087C095 /* Build configuration list for PBXNativeTarget "ArtificerUITests" */;
+			buildPhases = (
+				F435F55529D547410087C095 /* Sources */,
+				F435F55629D547410087C095 /* Frameworks */,
+				F435F55729D547410087C095 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F435F55B29D547410087C095 /* PBXTargetDependency */,
+			);
+			name = ArtificerUITests;
+			productName = ArtificerUITests;
+			productReference = F435F55929D547410087C095 /* ArtificerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F435F53229D547400087C095 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F435F53929D547400087C095 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					F435F54E29D547410087C095 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F435F53929D547400087C095;
+					};
+					F435F55829D547410087C095 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F435F53929D547400087C095;
+					};
+				};
+			};
+			buildConfigurationList = F435F53529D547400087C095 /* Build configuration list for PBXProject "Artificer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F435F53129D547400087C095;
+			productRefGroup = F435F53B29D547400087C095 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F435F53929D547400087C095 /* Artificer */,
+				F435F54E29D547410087C095 /* ArtificerTests */,
+				F435F55829D547410087C095 /* ArtificerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F435F53829D547400087C095 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F435F54529D547410087C095 /* Preview Assets.xcassets in Resources */,
+				F435F54229D547410087C095 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F435F54D29D547410087C095 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F435F55729D547410087C095 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F435F53629D547400087C095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F435F57129D547900087C095 /* CardView.swift in Sources */,
+				F435F54729D547410087C095 /* Persistence.swift in Sources */,
+				F435F54029D547400087C095 /* ContentView.swift in Sources */,
+				F435F56F29D547810087C095 /* CardViewModel.swift in Sources */,
+				F435F53E29D547400087C095 /* ArtificerApp.swift in Sources */,
+				F435F54A29D547410087C095 /* Artificer.xcdatamodeld in Sources */,
+				F435F57329D547A20087C095 /* CardListView.swift in Sources */,
+				F435F56D29D5476F0087C095 /* CardModel.swift in Sources */,
+				F435F57529D547B70087C095 /* AddCardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F435F54B29D547410087C095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F435F55429D547410087C095 /* ArtificerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F435F55529D547410087C095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F435F56029D547410087C095 /* ArtificerUITestsLaunchTests.swift in Sources */,
+				F435F55E29D547410087C095 /* ArtificerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F435F55129D547410087C095 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F435F53929D547400087C095 /* Artificer */;
+			targetProxy = F435F55029D547410087C095 /* PBXContainerItemProxy */;
+		};
+		F435F55B29D547410087C095 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F435F53929D547400087C095 /* Artificer */;
+			targetProxy = F435F55A29D547410087C095 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F435F56129D547410087C095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F435F56229D547410087C095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F435F56429D547410087C095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = Artificer/Assets.xcassets;
+				DEVELOPMENT_TEAM = AGKKDSQ26T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = teampete.Artificer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F435F56529D547410087C095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = Artificer/Assets.xcassets;
+				DEVELOPMENT_TEAM = AGKKDSQ26T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = teampete.Artificer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F435F56729D547410087C095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGKKDSQ26T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = teampete.ArtificerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Artificer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Artificer";
+			};
+			name = Debug;
+		};
+		F435F56829D547410087C095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGKKDSQ26T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = teampete.ArtificerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Artificer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Artificer";
+			};
+			name = Release;
+		};
+		F435F56A29D547410087C095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGKKDSQ26T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = teampete.ArtificerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Artificer;
+			};
+			name = Debug;
+		};
+		F435F56B29D547410087C095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGKKDSQ26T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = teampete.ArtificerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Artificer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F435F53529D547400087C095 /* Build configuration list for PBXProject "Artificer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F435F56129D547410087C095 /* Debug */,
+				F435F56229D547410087C095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F435F56329D547410087C095 /* Build configuration list for PBXNativeTarget "Artificer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F435F56429D547410087C095 /* Debug */,
+				F435F56529D547410087C095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F435F56629D547410087C095 /* Build configuration list for PBXNativeTarget "ArtificerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F435F56729D547410087C095 /* Debug */,
+				F435F56829D547410087C095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F435F56929D547410087C095 /* Build configuration list for PBXNativeTarget "ArtificerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F435F56A29D547410087C095 /* Debug */,
+				F435F56B29D547410087C095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F435F54829D547410087C095 /* Artificer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F435F54929D547410087C095 /* Artificer.xcdatamodel */,
+			);
+			currentVersion = F435F54929D547410087C095 /* Artificer.xcdatamodel */;
+			path = Artificer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F435F53229D547400087C095 /* Project object */;
+}
